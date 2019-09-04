@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Livvic:400,700&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="../style.css">
+  <title>Mélusine Rey - Projet Google homepage</title>
+</head>
+<body>
+  <header>
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="../index.html">Mélusine Rey</a>
+        </div>
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+          <ul class="nav-list">
+            <li><a href="../index.html#about">&Agrave; propos</a></li>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#skills">Comp&eacute;tences</a></li>
+            <li><a href="../index.html#exp">Exp&eacute;rience & Certificats</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="project-section">
+      <a class="return-btn" href="../index.html#portfolio"><button>Retour</button></a>
+      <h1>Page d'accueil de Google</h1>
+      <figure>
+        <a href="http://melusinerey.fr/google-homepage/">
+          <img class="project-imgs" src="../assets/images/google-homepage-project.png" alt="Projet Google Homepage">
+        </a>
+        <figcaption>Exercice : reproduire la page d'accueil de Google</figcaption>
+      </figure>
+      <article>
+      <h3>Contexte</h3>
+      <p>Cet exercice a été réalisé dans le cadre des cours de The Odin Project (curriculum "Web Development 101").</p>
+      <p>Il fallait reproduire la page d'accueil de Google : avoir le même agencement et le même contenu, peu importe si 
+        les liens et la recherche ne fonctionnent pas.</p>
+      <p>Nous devions donc construire une page qui contienne :
+        <ul>
+          <li>le logo Google</li>
+          <li>la barre de recherche et les boutons</li>
+          <li>le header (fixe)</li>
+          <li>le footer</li>
+        </ul>
+      </p>
+      <p>Vous pouvez consulter les instructions complètes 
+          <a href="https://www.theodinproject.com/courses/web-development-101/lessons/html-css" target="_blank">
+            directement sur The Odin Project
+          </a>.
+      </p>
+      <br>
+      <h3>Procédé</h3>
+      <p>Pour cet exercice j'ai utilisé du HTML et du CSS. J'ai utilisé une CSS Grid et plusieurs flexboxes pour rendre le
+         tout responsive. J'ai essayé de faire en sorte que ma page soit la plus ressemblante possible.</p>
+      <p>Vous pouvez <a href="https://github.com/zelumine/google-homepage" target="_blank">visualiser le code dans ce 
+        repository</a>.</p>
+    </article>
+    </section>
+  </main>
+  <footer>
+    <ul id="footer-nav">
+      <li><a href="mailto:melusine.rey@gmail.com"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/melusine-rey/"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/zelumine"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.facebook.com/melusine.rey.7"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="https://twitter.com/MelusineRey"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>Site web d&eacute;velopp&eacute; avec <i class="fas fa-heart"></i> par Mélusine Rey</p>
+  </footer>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="script.js"></script>
+</body>
+</html>

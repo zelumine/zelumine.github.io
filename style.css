@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic:400,700&display=swap');
+
+html {
+  box-sizing: border-box;  
+  width: 100%;
+  height: 100%;
+  font-family: "Livvic", sans-serif;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  background: #ffffff;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* This navbar was made following Tania Rascia's instructions : https://www.taniarascia.com/you-dont-need-a-framework/ */
+.navigation {
+  height: 70px;
+  background: #6448FF;
+  margin-bottom: 20px;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-container.brand a:hover {
+  cursor: pointer;
+}
+
+nav {
+  float: right;
+  background: #6448FF;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  color: #ffffff;
+}
+
+/* Mobile navigation */
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #6448FF;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  background: #6448FF;
+
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+/* End navbar */
+article {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+article a:visited, a[href^="mailto"] {
+  color: black;
+}
+
+main > section > article {
+  border: 5px solid #38B6FF;
+  margin-top: 5px;
+}
+
+.title {
+  color: #6448FF;
+}
+
+.subtitle {
+  color: #6448FF;
+  margin-top: 10px;
+}
+
+/* About section */
+#about {
+  margin-top: 80px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 75% 25%;
+}
+
+#mypic {
+  border-radius: 5px;
+  width: 75%;
+  justify-self: end;
+}
+
+/* Portfolio section */
+#portfolio p {
+  text-align: center;
+  margin: 5px 0 10px 0;
+}
+
+#pf {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  align-items: space-around;
+}
+
+@media screen and (min-width: 800px) {
+  #pf {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .project-card {
+    width: 30%;
+  }
+}
+
+.project-imgs {
+  width: 60%;
+}
+
+.project-card, .project-section {
+  margin: 5px 2.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-card {
+  border: 1px solid #6448FF;
+  padding: 0 0 2px 0;
+}
+
+.project-card figcaption {
+  text-align: center;
+}
+
+.img-thumbnail {
+  width: 100%;
+}
+
+a > button, a:visited > button {
+  text-decoration: none;
+  color: #6448FF;
+}
+
+button {
+  margin: 15px 5px;
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+}
+  
+button:hover {
+  border: 1px solid #6E6E6E;
+  box-shadow: 2px 3px 5px #EFEFEF;
+  cursor: pointer;
+  color: #38B6FF !important;
+}
+
+/* Skills section */
+#skills {
+  display: grid;
+  grid-template-rows: 80% 20%;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  #skills {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 10px;
+  }
+
+  #technos h3 {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+#skills li {
+  list-style: circle;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* Experience section */
+.job-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.job-dates {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.job-description li {
+  list-style-type: none;
+  text-indent: -15px;
+}
+
+/* Project pages */
+.project-section {
+  margin: 80px auto 0 auto;
+  max-width: 1000px;
+}
+
+.project-section figure {
+  margin-bottom: 10px;
+}
+
+.project-section figure a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.project-section figcaption {
+  text-align: center;
+}
+
+.project-section li {
+  list-style: circle;
+}
+
+.project-section article p {
+  margin-top: 5px;
+}
+
+.return-btn {
+  align-self: flex-start;
+}
+
+.return-btn button {
+  width: 80px;
+}
+
+/* Footer */
+footer, #footer-nav {
+  text-align: center;
+  color: black;
+  margin: 30px 0 0 0;
+  padding: 0 0 5px 0;
+}
+
+#footer-nav li {
+  list-style: none;
+  padding: 0 5px 2px;
+  display: inline-block;
+}
+
+#footer-nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Mobile first styles go here */
+
+@media screen and (min-width: 800px) {
+  /* Desktop styles go here */
+}
+
+footer {
+  padding-top: 30px;
+  bottom: 0;
+}

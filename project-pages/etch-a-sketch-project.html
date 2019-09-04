@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Livvic:400,700&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="../style.css">
+  <title>Mélusine Rey - Projet "etch-a-sketch" (écran magique)</title>
+</head>
+<body>
+  <header>
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="../index.html">Mélusine Rey</a>
+        </div>
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+          <ul class="nav-list">
+            <li><a href="../index.html#about">&Agrave; propos</a></li>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#skills">Comp&eacute;tences</a></li>
+            <li><a href="../index.html#exp">Exp&eacute;rience & Certificats</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="project-section">
+      <a class="return-btn" href="../index.html#portfolio"><button>Retour</button></a>
+      <h1>Etch-a-sketch (écran magique)</h1>
+      <figure>
+        <a href="http://melusinerey.fr/etch-a-sketch/" target="_blank">
+          <img class="project-imgs" src="../assets/images/etch-a-sketch-project.png" alt="Projet Etch-a-sketch">
+        </a>
+        <figcaption>Exercice : créer une grille "écran magique"</figcaption>
+      </figure>
+      <article>
+      <h3>Contexte</h3>
+      <p>Cet exercice a été réalisé dans le cadre des cours de The Odin Project (curriculum "Web Development 101"). 
+        Le site et les instructions étant en Anglais, j'ai travaillé en Anglais également.</p>
+      <p>Il nous était demandé de générer une grille de 16 carrés sur 16 (grâce au JavaScript), et de faire en sorte 
+        que lorsqu'on passe la souris sur une case, celle-ci change de couleur.</p>
+      <p>Il fallait ajouter un bouton "clear" qui permette de remettre la grille à zéro et de demander à l'utilisateur 
+        combien de cases par côté il ou elle voulait.</p>
+      <p>Vous pouvez consulter les instructions complètes 
+        <a href="https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project" target="_blank">
+          directement sur The Odin Project
+        </a>.</p>
+      <br>
+      <h3>Procédé</h3>
+      <p>Pour cet exercice j'ai utilisé du HTML, du CSS et du JavaScript avec de la manipulation DOM.</p>
+      <p>La grille (CSS Grid) est générée par le JavaScript au chargement de la page. Il y a un EventListener sur chaque 
+        case. Lorsque la souris passe sur une case, l'EventListener ajoute à celle-ci une classe qui définit une couleur 
+        de fond, et la case se colore.</p>
+      <p>Chaque bouton a son propre EventListener qui se déclenche lorsqu'on clique dessus.</p>
+      <p>Le bouton "clear" efface toute la grille, affiche un pop-up qui demande à la personne combien de cases
+        par côté elle veut, et génère une nouvelle grille.</p> 
+      <p>Le bouton "rainbow" déclenche une fonction qui génère une couleur aléatoire, puis attribue cette couleur à la 
+        case. Chaque case a donc une couleur différente.</p>
+      <p>Le bouton "classic" permet d'arrêter la fonction "rainbow" et de remettre la couleur d'origine.</p>
+      <p>Si une case est déjà colorée et que la souris passe de nouveau dessus, la case changera de couleur.</p>
+      <p>Vous pouvez <a href="https://github.com/zelumine/etch-a-sketch" target="_blank">visualiser le code dans ce 
+        repository</a>.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <ul id="footer-nav">
+      <li><a href="mailto:melusine.rey@gmail.com"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/melusine-rey/"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/zelumine"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.facebook.com/melusine.rey.7"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="https://twitter.com/MelusineRey"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>Site web d&eacute;velopp&eacute; avec <i class="fas fa-heart"></i> par Mélusine Rey</p>
+  </footer>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="script.js"></script>
+</body>
+</html>
