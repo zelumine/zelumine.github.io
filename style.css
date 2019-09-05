@@ -208,7 +208,7 @@ main > section > article {
 #mypic {
   margin-top: 10px;
   border-radius: 5px;
-  width: 50%;
+  width: 40%;
   justify-self: center;
 }
 
@@ -319,7 +319,7 @@ button:hover {
   #skills {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 75% 25%;
     grid-column-gap: 10px;
   }
 
@@ -354,6 +354,14 @@ button:hover {
 .job-description li {
   list-style-type: none;
   text-indent: -15px;
+}
+
+.certificates {
+  margin-bottom: 8px;
+}
+
+.semi-bold {
+  font-weight: 600;
 }
 
 /* Project pages */
