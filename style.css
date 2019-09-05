@@ -300,9 +300,9 @@ button:hover {
 /* Skills section */
 #skills {
   display: grid;
-  grid-template-rows: 70% 30%;
   grid-template-columns: 1fr;
   grid-row-gap: 5px;
+  grid-auto-flow: row;
 }
 
 #technos {
