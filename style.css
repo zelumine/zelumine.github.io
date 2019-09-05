@@ -200,6 +200,7 @@ main > section > article {
 #about {
   margin-top: 80px;
   display: grid;
+  height: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 60% 40%;
   grid-auto-flow: row;
