@@ -172,7 +172,12 @@ nav ul li a:visited:hover {
   transform: rotate(-45deg);
 }
 /* End navbar */
-a, a:visited {
+
+.hidden {
+  height: 1px;
+}
+
+a, a[href^="mailto"], a:visited {
   color: black;
 }
 
@@ -180,10 +185,6 @@ article {
   max-width: 1000px;
   margin: 10px auto;
   padding: 10px;
-}
-
-article a:visited, a[href^="mailto"] {
-  color: black;
 }
 
 main > section > article {
@@ -209,6 +210,10 @@ main > section > article {
   grid-auto-flow: row;
 }
 
+#about p {
+  margin-bottom: 5px;
+}
+
 #mypic {
   margin-top: 10px;
   border-radius: 5px;
@@ -223,6 +228,7 @@ main > section > article {
 
   #mypic {
     justify-self: end;
+    align-self: center;
     width: 75%;
   }
 }
@@ -286,7 +292,7 @@ a > button, a:visited > button {
 button {
   margin: 15px 5px;
   height: 30px;
-  width: 150px;
+  width: 120px;
   border-radius: 5px;
 }
   
@@ -312,7 +318,7 @@ button:hover {
 #tech-group {
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 51% 49%;
 }
 
 #tech-group li {
@@ -324,7 +330,7 @@ button:hover {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 75% 25%;
-    grid-column-gap: 10px;
+    grid-column-gap: 5px;
   }
 
   #technos {
@@ -334,9 +340,13 @@ button:hover {
     text-align: center;
     margin-top: 30px;
   }
+
+  #tech-group li {
+    margin-left: -10px;
+  }
 }
 
-#skills li {
+#skills li, .project-section li {
   list-style: circle;
 }
 
@@ -390,8 +400,9 @@ button:hover {
   text-align: center;
 }
 
-.project-section li {
-  list-style: circle;
+.project-section figcaption a {
+  margin: 0;
+  padding: 0;
 }
 
 .project-section article p {
@@ -423,14 +434,6 @@ footer, #footer-nav {
 #footer-nav li a {
   text-decoration: none;
   color: black;
-}
-
-
-
-/* Mobile first styles go here */
-
-@media screen and (min-width: 800px) {
-  /* Desktop styles go here */
 }
 
 footer {
