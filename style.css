@@ -172,6 +172,10 @@ nav ul li a:visited:hover {
   transform: rotate(-45deg);
 }
 /* End navbar */
+a, a:visited {
+  color: black;
+}
+
 article {
   max-width: 1000px;
   margin: 10px auto;
@@ -202,7 +206,7 @@ main > section > article {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 60% 40%;
+  grid-auto-flow: row;
 }
 
 #mypic {
