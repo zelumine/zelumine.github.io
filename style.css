@@ -25,7 +25,13 @@ strong {
 }
 
 .hidden {
-  height: 12px;
+  height: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  .hidden {
+    height: 12px;
+  }
 }
 
 header a, header a:visited {
