@@ -5,29 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Livvic:400,700&display=swap" rel="stylesheet">   <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="../navbar-style.css">
   <link rel="stylesheet" href="../style.css">
-  <title>Mélusine Rey - Projet page d'accueil de produit</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="fixed-nav-master/css/ie.css">
+  <![endif]-->
+  <script src="../fixed-nav-master/js/responsive-nav.js"></script>
+  <title>Mélusine Rey - Portfolio : projet landing page</title>
 </head>
 <body>
   <header>
-    <section class="navigation">
-      <div class="nav-container">
-        <div class="brand">
-          <a href="../index.html">Mélusine Rey</a>
-        </div>
-        <nav>
-          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-          <ul class="nav-list">
-            <li><a href="../index.html#about-link">&Agrave; propos</a></li>
-            <li><a href="../index.html#portfolio-link">Portfolio</a></li>
-            <li><a href="../index.html#skills-link">Comp&eacute;tences</a></li>
-            <li><a href="../index.html#exp-link">Exp&eacute;rience & Certificats</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
+    <div class="brand">
+      <a href="../index.html">Mélusine Rey</a>
+    </div>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="../index.html#about-link">&Agrave; propos</a></li>
+        <li><a href="../index.html#portfolio-link">Portfolio</a></li>
+        <li><a href="../index.html#skills-link">Comp&eacute;tences</a></li>
+        <li><a href="../index.html#exp-link">Exp&eacute;rience & Certificats</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="project-section">
@@ -68,7 +68,8 @@
     </ul>
     <p>Site web d&eacute;velopp&eacute; avec <i class="fas fa-heart"></i> par Mélusine Rey</p>
   </footer>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="script.js"></script>
+  <script src="../fixed-nav-master/js/fastclick.js"></script>
+  <script src="../fixed-nav-master/js/scroll.js"></script>
+  <script src="../fixed-nav-master/js/fixed-responsive-nav.js"></script>
 </body>
 </html>

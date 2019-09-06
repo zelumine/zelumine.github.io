@@ -6,28 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
   <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="navbar-style.css">
   <link rel="stylesheet" href="style.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="fixed-nav-master/css/ie.css">
+  <![endif]-->
+  <script src="fixed-nav-master/js/responsive-nav.js"></script>
   <title>Mélusine Rey - Portfolio</title>
 </head>
 <body>
   <header>
-    <section class="navigation">
-      <div class="nav-container">
-        <div class="brand">
-          <a href="index.html">Mélusine Rey</a>
-        </div>
-        <nav>
-          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-          <ul class="nav-list">
-            <li><a href="#about-link">&Agrave; propos</a></li>
-            <li><a href="#portfolio-link">Portfolio</a></li>
-            <li><a href="#skills-link">Comp&eacute;tences</a></li>
-            <li><a href="#exp-link">Exp&eacute;rience & Certificats</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
+    <div class="brand">
+      <a href="index.html">Mélusine Rey</a>
+    </div>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="#about-link">&Agrave; propos</a></li>
+        <li><a href="#portfolio-link">Portfolio</a></li>
+        <li><a href="#skills-link">Comp&eacute;tences</a></li>
+        <li><a href="#exp-link">Exp&eacute;rience & Certificats</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section>
@@ -45,7 +46,6 @@
           <p>En 2008 j'ai fait une première année de DUT Services et Réseaux de Communication et j'y ai découvert le HTML.
               Je me suis rendue compte que ça me plaisait beaucoup.</p>
           <p>Quelques années plus tard je me suis inscrite sur CodeCademy et j'ai commencé à me former comme ça.</p>
-          <div class="hidden"><br><br><a name="portfolio-link"></a></div>
           <p>En rentrant du Canada en juin 2018, je me suis lancée dans une auto-formation plus sérieuse. J'ai commencé par quelques cours
             que j'avais achetés sur StackSkills, repris CodeCademy, puis on m'a parlé de freeCodeCamp lors d'un meetup de Ladies
             of Code Paris. Je me suis également inscrite sur The Odin Project après en avoir entendu parler dans un podcast de 
@@ -56,7 +56,7 @@
           développement web un sujet qui me passionne !</p>
         </div>
         <img src="assets/images/Melusine.JPG" alt="Mélusine Rey" id="mypic">
-        
+        <div class="hidden"><br><br><a name="portfolio-link"></a></div>
       </article>
       <!-- End about -->
       <!-- Portfolio -->
@@ -299,7 +299,8 @@
     </ul>
     <p>Site web d&eacute;velopp&eacute; avec <i class="fas fa-heart"></i> par Mélusine Rey</p>
   </footer>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="script.js"></script>
+  <script src="fixed-nav-master/js/fastclick.js"></script>
+  <script src="fixed-nav-master/js/scroll.js"></script>
+  <script src="fixed-nav-master/js/fixed-responsive-nav.js"></script>
 </body>
 </html>
