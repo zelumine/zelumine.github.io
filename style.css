@@ -241,7 +241,7 @@ button:hover {
 
 /* Project pages */
 .project-section {
-  margin: 80px auto 0 auto;
+  margin: 60px auto 0 auto;
   max-width: 1000px;
 }
 
@@ -287,7 +287,8 @@ footer, #footer-nav {
   text-align: center;
   color: black;
   margin: 30px 0 0 0;
-  padding: 0 0 5px 0;
+  padding: 30 0 5px 0;
+  bottom: 0;
 }
 
 #footer-nav li {
@@ -299,9 +300,4 @@ footer, #footer-nav {
 #footer-nav li a {
   text-decoration: none;
   color: black;
-}
-
-footer {
-  padding-top: 30px;
-  bottom: 0;
 }
