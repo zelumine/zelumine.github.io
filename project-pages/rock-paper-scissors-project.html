@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
+  <link rel="stylesheet" href="../navbar-style.css">
+  <link rel="stylesheet" href="../style.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="fixed-nav-master/css/ie.css">
+  <![endif]-->
+  <script src="../fixed-nav-master/js/responsive-nav.js"></script>
+  <title>Mélusine Rey - Portfolio : projet pierre-feuille-ciseaux</title>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <a href="../index.html">Mélusine Rey</a>
+    </div>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="../index.html#about-link">&Agrave; propos</a></li>
+        <li><a href="../index.html#portfolio-link">Portfolio</a></li>
+        <li><a href="../index.html#skills-link">Comp&eacute;tences</a></li>
+        <li><a href="../index.html#exp-link">Exp&eacute;rience & Certificats</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="project-section">
+      <a class="return-btn" href="../index.html#portfolio-link"><button>Retour</button></a>
+      <h1>Pierre, feuille, ciseaux (rock, paper, scissors)</h1>
+      <figure>
+        <a href="https://melusinerey.fr/rock-paper-scissors/with-events/" target="_blank" alt="Projet rock paper scissors">
+          <img class="project-imgs" src="../assets/images/rock-paper-scissors-events-project.png" alt="Projet rock paper scissors">
+        </a>
+        <figcaption>Exercice : jeu pierre feuille ciseaux</figcaption>
+      </figure>
+      <article>
+      <h3>Contexte</h3>
+      <p>Cet exercice a été réalisé dans le cadre des cours de The Odin Project (curriculum "Web Development 101"). 
+        Le site et les instructions étant en Anglais, j'ai travaillé en Anglais également.</p>
+        <p>Il a été réalisé en deux parties : d'abord, nous devions concevoir ce jeu en demandant à l'utilisateur ou l'utilisatrice quel coup il ou elle voulait jouer (à l'aide d'une fenêtre prompt), puis afficher les résultats dans la console. Vous pouvez consulter les instructions complètes 
+        <a href="https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors" target="_blank" alt="Lien vers The Odin Project">
+          directement sur The Odin Project
+        </a>.</p>
+        <p>Ensuite, plus loin dans le curriculum "Web Development 101", nous avons travaillé avec la manipulation du DOM. On nous a alors demandé de reprendre cet exercice, en y ajoutant cette fois des boutons à la place de la fenêtre, et d'afficher les résultats à l'écran. Vous pouvez consulter les instructions complètes 
+          <a href="https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation#practice" target="_blank" alt="Lien vers The Odin Project">
+            directement sur The Odin Project
+          </a>.</p>
+      <br>
+      <h3>Procédé</h3>
+      <p>Pour la version visible dans la console de cet exercice j'ai utilisé uniquement du JavaScript, que j'ai inséré dans une page HTML vide. Pour la version plus avancée, j'ai utilisé du HTML, du CSS et du JavaScript avec de la manipulation DOM.</p>
+      <p>Dans les deux cas, le coup joué par l'ordinateur est généré de manière aléatoire : la méthode Math.random génère un chiffre entre 1 et 3, chaque chiffre est attribué à un coup (pierre, feuille ou ciseaux).</p>
+      <p>Que ce soit en tapant "rock", "paper" ou "scissors" dans la fenêtre, ou en cliquant sur l'une des images, lorsque l'utilisateur ou l'utilisatrice a choisi son coup, le script compare au coup de l'ordinateur pour définir quel joueur a gagné cette manche.</p> 
+      <p>Dans la version avec boutons, le score et le résultat de la manche sont ensuite affichés, et lorsque l'un des joueurs obtient 5 points, le jeu s'arrête et se remet à zéro.</p>
+      <p>Il y a un EventListener sur chaque bouton, qui permet d'identifier </p>
+      <p>Vous pouvez cliquer sur l'image pour voir la page avec boutons ou <a href="https://melusinerey.fr/rock-paper-scissors/console-version/" target="_blank" alt="Projet rock paper scissors avec console">ici pour voir la version qui passe par la console</a>, ou <a href="https://github.com/zelumine/rock-paper-scissors" target="_blank" alt="Projet rock paper scissors sur GitHub">visualiser le code dans ce 
+        repository</a> (dossier GitHub).</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <ul id="footer-nav">
+      <li><a href="mailto:melusine.rey@gmail.com" alt="Email de Mélusine Rey"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/melusine-rey/" alt="Profil LinkedIn Mélusine Rey"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/zelumine" alt="Profil GitHub Mélusine Rey"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.facebook.com/melusine.rey.7" alt="Profil Facebook Mélusine Rey"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="https://twitter.com/MelusineRey" alt="Compte Twitter Mélusine Rey"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>Site web d&eacute;velopp&eacute; avec <i class="fas fa-heart"></i> par Mélusine Rey</p>
+  </footer>
+  <script src="../fixed-nav-master/js/fastclick.js"></script>
+  <script src="../fixed-nav-master/js/scroll.js"></script>
+  <script src="../fixed-nav-master/js/fixed-responsive-nav.js"></script>
+</body>
+</html>
