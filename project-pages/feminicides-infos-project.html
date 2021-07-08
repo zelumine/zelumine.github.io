@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
+  <link rel="stylesheet" href="../navbar-style.css">
+  <link rel="stylesheet" href="../style.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="fixed-nav-master/css/ie.css">
+  <![endif]-->
+  <script src="../fixed-nav-master/js/responsive-nav.js"></script>
+  <title>Mélusine Rey - Portfolio : site Féminicides infosl</title>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <a href="../index.html">Mélusine Rey</a>
+    </div>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="../index.html#about-link">&Agrave; propos</a></li>
+        <li><a href="../index.html#portfolio-link">Portfolio</a></li>
+        <li><a href="../index.html#skills-link">Comp&eacute;tences</a></li>
+        <li><a href="../index.html#exp-link">Exp&eacute;rience & Certificats</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="project-section">
+      <a class="return-btn" href="../index.html#portfolio-link"><button>Retour</button></a>
+      <h1>Feminicides infos (projet 3 Ironhack)</h1>
+      <figure>
+        <a href="" target="_blank" alt="Projet Féminicides infos">
+          <img class="project-imgs" src="../assets/images/feminicides-infos-project.png" alt="Projet Féminicides infos">
+        </a>
+        <figcaption>Site Féminicides infos</figcaption>
+      </figure>
+      <article>
+      <h3>Contexte</h3>
+      <p>Ce projet a été réalisé en groupe lors du bootcamp Ironhack. C'était notre dernier projet full-stack, en utilisant React, et nous avions une dizaine de jours pour le réaliser.</p>
+      <p>Nous avons décidé de reprendre une carte créée par le collectif <a href="https://www.facebook.com/feminicide" alt="Page Facebook collectif">Féminicides 
+        par compagnon ou ex</a> pour en faire un site avec les données de 2021, comportant également des graphiques. Ce site recense donc les féminicides par compagnon ou ex en France 
+        en 2021. C'est un sujet qui nous semble important et encore pas assez pris au sérieux.</p>
+      <p>Nous avons inclus une partie "Tableau de bord" pour qu'éventuellement les personnes du collectif (et nous-mêmes) puissent ajouter, éditer ou supprimer des informations 
+        facilement. Il y a la possibilité d'ajouter des informations concernant des féminicides (que nous avons appelés "événements"), les régions, ou les utilisateurices.</p>
+      <p>Voici quelques unes des spécificités qui nous étaient demandées :</p>
+      <p>Coté back-end :</p>
+      <ul>
+        <li>Avoir au moins 2 modèles différents dans la base de données</li>
+        <li>Avoir des routes protégées</li>
+        <li>Avoir un CRUD (Create, Read, Update, Delete)</li>
+      </ul>
+      <p>Côté front-end :</p>
+      <ul>
+        <li>Utilisation de props et de fonctions callbacks</li>
+        <li>Aucune modification directe du state</li>
+        <li>Redirection des routes</li>
+      </ul>
+      <br>
+      <h3>Procédé</h3>
+      <p>Nous avons développé ce site en ReactJS, nous avons donc également utilisé du JSX, ainsi que du CSS pour la mise en page.</p>
+      <p>J'ai personnellement travaillé sur la partie "Tableau de bord", dans laquelle on trouve plusieurs formulaires directement liés à la base de données, qui permettent 
+        d'ajouter un "événement" ou un.e utilisateurice, d'éditer un "événement", une région ou un.e utilisateurice, ou supprimer l'un des trois.</p>
+      <p>Vous pouvez cliquer sur l'image pour voir la page 
+        ou <a href="https://github.com/myracodes/feminicides-info-express" target="_blank" alt="Projet Féminicides infos côté serveur">visualiser le code dans ce 
+        repository pour le côté serveur</a> (dossier GitHub) 
+        ou <a href="https://github.com/myracodes/feminicides-info-react" target="_blank" alt="Projet Féminicides infos côté client">dans ce repository pour le côté client</a> 
+        (dossier GitHub).</p>
+    </article>
+    </section>
+  </main>
+  <footer>
+    <ul id="footer-nav">
+      <li><a href="mailto:melusine.rey@gmail.com" alt="Email de Mélusine Rey"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/melusine-rey/" alt="Profil LinkedIn Mélusine Rey"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/zelumine" alt="Profil GitHub Mélusine Rey"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.facebook.com/melusine.rey.7" alt="Profil Facebook Mélusine Rey"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="https://twitter.com/MelusineRey" alt="Compte Twitter Mélusine Rey"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>Site web d&eacute;velopp&eacute; avec <i class="fas fa-heart"></i> par Mélusine Rey</p>
+  </footer>
+  <script src="../fixed-nav-master/js/fastclick.js"></script>
+  <script src="../fixed-nav-master/js/scroll.js"></script>
+  <script src="../fixed-nav-master/js/fixed-responsive-nav.js"></script>
+</body>
+</html>

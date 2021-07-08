@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
+  <link rel="stylesheet" href="../navbar-style.css">
+  <link rel="stylesheet" href="../style.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="fixed-nav-master/css/ie.css">
+  <![endif]-->
+  <script src="../fixed-nav-master/js/responsive-nav.js"></script>
+  <title>Mélusine Rey - Portfolio : Projet My Therapy</title>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <a href="../index.html">Mélusine Rey</a>
+    </div>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="../index.html#about-link">&Agrave; propos</a></li>
+        <li><a href="../index.html#portfolio-link">Portfolio</a></li>
+        <li><a href="../index.html#skills-link">Comp&eacute;tences</a></li>
+        <li><a href="../index.html#exp-link">Exp&eacute;rience & Certificats</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="project-section">
+      <a class="return-btn" href="../index.html#portfolio-link"><button>Retour</button></a>
+      <h1></h1>
+      <figure>
+        <a href="https://my-therapy-app.herokuapp.com/" target="_blank" alt="Projet My Therapy">
+          <img class="project-imgs" src="../assets/images/my-therapy-project.png" alt="Projet My Therapy">
+        </a>
+        <figcaption>Projet My Therapy (Ironhack, projet 2)</figcaption>
+      </figure>
+      <article>
+      <h3>Contexte</h3>
+      <p><>Ce projet fullstack a été réalisé en groupe (de 3 personnes) lors du bootcamp Ironhack, en une semaine.</p>
+      <p>Etant tous les trois intéressés par la santé mentale, nous avons choisi de travailler sur un site qui permettrait à des patients en thérapie (notamment en Thérapie Comportementale
+        et Cognitive) d'avoir un carnet de bord en ligne et à leur thérapeute de consulter les notes. Le ou la patient.e pourrait noter les "épisodes" et éléments déclencheurs de crises.
+      </p>
+      <p>Voici une partie des spécificités qui nous ont été demandées :</p>
+      <ul>
+        <li>Avoir un CRUD (Create, Read, Update, Delete)</li>
+        <li>Avoir une bonne structure de dossiers et des fichiers nommés correctement</li>
+        <li>Utiliser au moins deux modèles, complexes, dans la base de données</li>
+        <li>Asynchronicité</li>
+        <li>Utiliser la méthode <i>populate</i></li>
+        <li>Utiliser des <i>partials</i></li>
+        <li>Utiliser Ajax (bonus)</li>
+        <li>Avoir du code propre et documenté</li>
+      </ul>
+      <br>
+      <h3>Procédé</h3>
+      <p>Pour cet exercice nous avons utilisé du HTML, du CSS, NodeJS, ExpressJS, Mongoose, Ajax, Handlebars. Nous avons un modèle de base de données "patient" et un "docteur", qui
+        communiquent entre eux : par exemple, si un.e patient.e change de médecin, les informations des médecins se mettent à jour (le ou la patient.e disparait de la liste des patients 
+        du médecin actuel et vont s'ajouter à la liste des patients du nouveau médecin).
+      </p>
+      <p>Il y a donc deux tableaux de bord différents, un pour les patient.e.s, un pour les thérapeutes. Le ou la patient.e peut voir sur son tableau de bord : les informations concernant
+        son thérapeute, ses documents déjà créés, ainsi qu'un bouton qui permet de créer de nouveaux documents. Le ou la thérapeute voit la liste de ses patiens et lorsqu'il ou elle clique 
+        sur un.e patient.e, peut voir la liste des documents de ce.tte patient.e et les lire (uniquement).
+      </p>
+      <p>J'ai personnellement travaillé sur toutes les routes du back-end et la communication entre les modèles de la base de données.</p>
+      <p>Vous pouvez cliquer sur l'image pour voir la page ou <a href="https://github.com/anachannn/mytherapy" target="_blank" alt="Projet My Therapy">visualiser le code dans ce 
+        repository</a> (dossier GitHub).</p>
+    </article>
+    </section>
+  </main>
+  <footer>
+    <ul id="footer-nav">
+      <li><a href="mailto:melusine.rey@gmail.com" alt="Email de Mélusine Rey"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/melusine-rey/" alt="Profil LinkedIn Mélusine Rey"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/zelumine" alt="Profil GitHub Mélusine Rey"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.facebook.com/melusine.rey.7" alt="Profil Facebook Mélusine Rey"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="https://twitter.com/MelusineRey" alt="Compte Twitter Mélusine Rey"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>Site web d&eacute;velopp&eacute; avec <i class="fas fa-heart"></i> par Mélusine Rey</p>
+  </footer>
+  <script src="../fixed-nav-master/js/fastclick.js"></script>
+  <script src="../fixed-nav-master/js/scroll.js"></script>
+  <script src="../fixed-nav-master/js/fixed-responsive-nav.js"></script>
+</body>
+</html>
