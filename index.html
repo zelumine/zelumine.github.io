@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f42104ff-e01d-4c7a-8b3e-197ae16ce0f0" data-blockingmode="auto" data-consentmode="disabled" type="text/javascript"></script> -->
   <script src="https://kit.fontawesome.com/a7d8db710a.js"></script>
   <link rel="stylesheet" href="css/normalize.min.css" />
   <link rel="stylesheet" href="navbar-style.css">
@@ -17,9 +18,60 @@
     <link rel="stylesheet" href="fixed-nav-master/css/ie.css">
   <![endif]-->
   <script src="fixed-nav-master/js/responsive-nav.js"></script>
+
   <title>Mélusine Rey - Portfolio</title>
 </head>
 <body>
+  <!-- <script id="CookieDeclaration" src="https://consent.cookiebot.com/f42104ff-e01d-4c7a-8b3e-197ae16ce0f0/cd.js" type="text/javascript" async></script> -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T286SFX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <script type="text/javascript" id="3rd-party-libs-initializer" data-cookieconsent="statistics">
+    (function () {
+      const initGtm = function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        console.log("coucou depuis le script GTM?");
+      };
+
+      function _injectJS(id, src, dataCbid) {
+        var scriptId = ('3rd-js-' + id);
+
+        if (!id || !src || document.getElementById(scriptId)) return;
+
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.async = 1;
+        script.defer = true;
+        script.id = scriptId;
+        script.src = src;
+        if (dataCbid) {
+          script.setAttribute("data-cbid", dataCbid);
+          script.setAttribute("data-blockingmode", "auto");
+          script.setAttribute("data-consentmode", "disabled");
+        }
+        console.log('script in the injectJS Cookiebot function', script);
+
+        head.appendChild(script);
+      }
+
+      _injectJS('Cookiebot', 'https://consent.cookiebot.com/uc.js', 'f42104ff-e01d-4c7a-8b3e-197ae16ce0f0');
+
+      window.addEventListener('CookiebotOnAccept', (e) => {
+        if (Cookiebot.consent.statistics) {
+          _injectJS('hubspot', '//js-eu1.hs-scripts.com/26968108.js');
+    
+          initGtm(window,document,'script','dataLayer','GTM-T286SFX');
+        }
+      }, false);
+
+
+      document.getElementById('3rd-party-libs-initializer').remove();
+    })()
+  </script>
   <header>
     <div class="brand">
       <a href="index.html">Mélusine Rey</a>
